@@ -67,7 +67,7 @@ export default function Home() {
 
       <Grid container spacing={3}>
         {filteredAndSortedProducts.map(product => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={product.id}>
+          <Grid size={{ xs: 12, sm: 6, md: 4, lg: 3 }} key={product.id}>
             <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <CardMedia component="img" height="200" image={product.image} alt={product.title} sx={{ objectFit: 'contain', p: 2 }} />
               <CardContent sx={{ flexGrow: 1 }}>
